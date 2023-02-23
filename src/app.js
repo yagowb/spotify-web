@@ -1,0 +1,25 @@
+const express = require("express");
+const app = express();
+const path = require('path');
+
+
+app.use("/imgs", express.static(path.join(__dirname, '/imgs')));
+
+app.get("/", function(req, res) {
+  res.sendFile(__dirname + '/Home.html');
+});
+
+app.get("/FAQ.html", function(req, res) {
+  res.sendFile(__dirname + "/FAQ.html");
+});
+  
+app.get("/Cadastro.html", function(req, res)  {
+  res.sendFile(__dirname + "/Cadastro.html");
+});
+
+
+
+
+//Inicialização do Servidor//
+app.listen(process.env.PORT ? process.env.PORT : 5000);
+
