@@ -6,7 +6,7 @@ const path = require('path');
 app.use("/imgs", express.static(path.join(__dirname, '/imgs')));
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + '/Home.html');
+  res.sendFile(__dirname + '/home.html');
 });
 
 app.get("/FAQ.html", function(req, res) {
