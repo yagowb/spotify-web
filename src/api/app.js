@@ -23,3 +23,5 @@ app.get("/Cadastro", function(req, res)  {
 //Inicialização do Servidor//
 app.listen(process.env.PORT ? process.env.PORT : 5000);
 
+
+module.exports = app.js;
