@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yagowb/spotify-web/issues"
   },
-  "homepage": "https://github.com/yagowb/spotify-web#readme"
+  "homepage": "https://github.com/yagowb/spotify-web#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
