@@ -3,18 +3,18 @@ const app = express();
 const path = require('path');
 
 
-app.use("/imgs", express.static(path.join(__dirname, '/imgs')));
+app.use("../src/imgs", express.static(path.join(__dirname, '../src/imgs')));
 
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + '/home.html');
+  res.sendFile(__dirname + '../src/home.html');
 });
 
 app.get("/FAQ", function(req, res) {
-  res.sendFile(__dirname + "/FAQ.html");
+  res.sendFile(__dirname + "../src/FAQ.html");
 });
   
 app.get("/Cadastro", function(req, res)  {
-  res.sendFile(__dirname + "/Cadastro.html");
+  res.sendFile(__dirname + "../src/Cadastro.html");
 });
 
 
